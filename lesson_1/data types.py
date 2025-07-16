@@ -14,5 +14,8 @@ dict = { "key1": "value1", "key2": "value2"}
 print(dict, type(dict))
 def fun(): pass
 print(fun, type(fun))
-str = ("Hello")
+str = "Hello"
 print(str, type(str))
+
+# todo сделать описание и пример использования каждого типа в новой отдельной папке и новом отдельном файле
+# Все действия в программировании: условия, циклы, функции, операции
