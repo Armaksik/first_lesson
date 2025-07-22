@@ -23,3 +23,4 @@ while i:
             summa += int(number)
         except:
             print("перемененая не является числом")
+
