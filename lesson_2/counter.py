@@ -8,10 +8,18 @@
 ввод переменной через input
 
 '''
-i = 0
-startet = True
-while startet:
-    counter = int(input())
-    a = counter + int(input())
-    print(a)
-    startet = True
+i = True
+summa = 0
+while i:
+    number = input("введите число: ")
+    if number == "sum":
+        print(summa)
+        summa = 0
+    elif number == "quit" or number == "exit":
+        print("вы вышли из цикла")
+        break
+    else:
+        try:
+            summa += int(number)
+        except:
+            print("перемененая не является числом")
