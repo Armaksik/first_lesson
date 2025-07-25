@@ -8,9 +8,8 @@
 ввод переменной через input
 
 '''
-i = True
 summa = 0
-while i:
+while True:
     number = input("введите число: ")
     if number == "sum":
         print(summa)
@@ -18,9 +17,15 @@ while i:
     elif number == "quit" or number == "exit":
         print("вы вышли из цикла")
         break
+    elif number == "continue":
+        print("вы пропустили все, что ниже и оказались в начале цикла")
+        continue
     else:
         try:
             summa += int(number)
         except:
             print("перемененая не является числом")
+
+
+
 
