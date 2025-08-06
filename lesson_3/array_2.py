@@ -1,7 +1,7 @@
 # todo сделать так, чтобы пользователь вводил знак операции и программа выполняла эту операцию с массивом
 
 
-list = [1, 20, 32]
+list = [0]
 i = 0
 number = 0
 Operation = input("введите операцию: ")
@@ -13,9 +13,11 @@ while i < len(list):
         number -= list[i]
         i += 1
     elif Operation == "*":
-        multiplicatot = int(input("введите число для умножения: "))
-        multiplicatot *= list[i]
+        number *= list[i]
         i += 1
-print(number or multiplicatot)
+    else:
+        print("этот символ не является знаком")
+        break
+print(number)
 
-# todo не получилось решить
+# todo нужно сделать так, чтобы программа выводила все операции
