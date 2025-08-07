@@ -1,23 +1,17 @@
-# todo сделать так, чтобы пользователь вводил знак операции и программа выполняла эту операцию с массивом
-
-
-list = [0]
+list = [11, 33, 44, 66]
 i = 0
-number = 0
-Operation = input("введите операцию: ")
+sum = 0
+min = 0
+mul = 1
 while i < len(list):
-    if Operation == "+":
-        number += list[i]
+    try:
+        sum += list[i]
+        min -= list[i]
+        mul *= list[i]
         i += 1
-    elif Operation == "-":
-        number -= list[i]
-        i += 1
-    elif Operation == "*":
-        number *= list[i]
-        i += 1
-    else:
+    except:
         print("этот символ не является знаком")
         break
-print(number)
+print(sum, min, mul,)
 
-# todo нужно сделать так, чтобы программа выводила все операции
+

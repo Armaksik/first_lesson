@@ -4,14 +4,26 @@
 
 3) Определите среднее арифметическое чисел в списке и выведите его."""
 
-list = [22, 31, 29, 91, 10]
-summ = 0
-for n in list:
-     summ += n
-print(f"Сумма чисел в списке {summ}")
+def sum(num):
+     summ = 0
+     for numbers in num:
+          summ += numbers
+     return summ
+def aver(num):
+     if not num:
+          return 0
+     summ = sum(num)
+     return summ / len(num)
 
 
-average = summ / len(list)
-print(f"Среднее арифметическое чисел в списке {average}")
+def main():
+     num = [100, 29, 55, 77]
+     summ_result = sum(num)
+     aver_result = aver(num)
 
-# todo вынести в отдельные функции: сумму и среднее арифметическое списка
+     print(f"среднее арифметическое списка: {summ_result}")
+     print(f"среднее арифметическое списка: {aver_result}")
+if __name__ == '__main__':
+     main()
+
+
