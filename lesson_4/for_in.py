@@ -25,5 +25,5 @@ def main():
      print(f"среднее арифметическое списка: {aver_result}")
 if __name__ == '__main__':
      main()
-
+# todo узнать смысл 26 строки
 
